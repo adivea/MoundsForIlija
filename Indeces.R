@@ -62,7 +62,7 @@ AspectResult <- Aspect_final %>%
          Expected=sum(MoundSRTM)*SRTMPercent,
          SRTMIndex=MoundSRTM/Expected) %>%
   mutate_at(6:13,round,2)%>% 
-  select(c(5,6,2,8:10,5,12,13))
+  select(c(5,6,2,8:10,5,4,12,13))
 
 
 print("Printing Aspect Result to file.")
